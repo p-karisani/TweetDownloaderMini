@@ -17,21 +17,13 @@ public class TwitterAPI {
 
 	static {
 		ConfigurationBuilder cb = new ConfigurationBuilder();
-//		cb.setDebugEnabled(true)
-//		  .setOAuthConsumerKey("")
-//		  .setOAuthConsumerSecret("")
-//		  .setOAuthAccessToken("")
-//		  .setOAuthAccessTokenSecret("")
-//		  .setTweetModeExtended(true);
-
-//		// app: reports
 		cb.setDebugEnabled(true)
-		  .setOAuthConsumerKey("Ijpi0QMyENFfOmem5UHTYKFes")
-		  .setOAuthConsumerSecret("FQztli12qywTMsgWvKUQzKdt2PjSKikgwqWvisqaIBCOEqxryy")
-		  .setOAuthAccessToken("840758939067256832-bmJNcPCGjzGIPtre0wa9SNV88mAUniA")
-		  .setOAuthAccessTokenSecret("NH0Ueu3zxnaS5SHeLxSiTwCP5UCX406W2QCFeerhxRIYg")
+		  .setOAuthConsumerKey("")
+		  .setOAuthConsumerSecret("")
+		  .setOAuthAccessToken("")
+		  .setOAuthAccessTokenSecret("")
 		  .setTweetModeExtended(true);
-		
+
 		TwitterFactory tf = new TwitterFactory(cb.build());
 		twitter = tf.getInstance();
 	}
